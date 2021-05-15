@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 import { SearchBarComponent } from './search-bar.component';
 
 describe('SearchBarComponent', () => {
@@ -33,4 +34,14 @@ describe('SearchBarComponent', () => {
     fixture.detectChanges();
     expect(component.term).toBe('new input value');
   });
+
+  // it('updates submitted when form is submitted', () => {
+  //   component.term = 'new term is defined';
+  //   let submittedTerm = '';
+  //   component.submitted.subscribe((term: string) => (submittedTerm = term));
+  //   fixture.debugElement
+  //     .query(By.css('form'))
+  //     .nativeElement.triggerEventHandler('submit', null);
+  //   expect(submittedTerm).toBe('new term is defined');
+  // });
 });
